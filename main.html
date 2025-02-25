@@ -19,12 +19,15 @@
             object-fit: cover;
             margin-bottom: 20px;
         }
-        h1 {
+        h2 {
             color: #333;
         }
         p {
             color: #555;
             line-height: 1.6;
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
         }
         .container {
             max-width: 800px;
@@ -36,8 +39,19 @@
         }
         ul {
             text-align: left;
-            width: 60%;
+            width: 80%;
             margin: 0 auto;
+        }
+        .homepage-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .homepage-links a {
+            text-align: left;
+            margin-left: 0;
+            
         }
     </style>
 </head>
@@ -47,16 +61,16 @@
         <img src="avatar.jpeg" alt="My Picture">
         
         <!-- Short Bio -->
-        <h1>Hi, I'm Wuchen!</h1>
+        <h2>Hi, I'm Wuchen!</h2>
         <p>
-            Hello! I'm Wuchen Li, a passionate student currently pursuing a dual Master of Science in Information Systems and Applied Information Science at Cornell Tech.<br>
+            Hello! I'm Wuchen Li, a passionate student currently pursuing a dual Master of Science in Information Systems and Applied Information Science at Cornell Tech.
             My academic journey spans three incredible institutions—Cornell University, Weill Cornell Medicine, and the Israel Technion ;)
         </p>
 
         <!-- Additional Content -->
         <h2>About Me</h2>
         <p>
-            I'm particularly interested in the intersection of computer vision and healthcare, where I hope to contribute to innovative solutions that improve patient outcomes.<br>
+            I'm particularly interested in the intersection of computer vision and healthcare, where I hope to contribute to innovative solutions that improve patient outcomes.
             Outside of my academic and professional pursuits, I'm an avid Kendo practitioner, a discipline that has taught me the values of focus, resilience, and precision.
         </p>
 
@@ -67,11 +81,10 @@
         </ul>
 
         <h2>My Homepage</h2>
-        <p>
-            Feel free to reach out to me via:<br>
-            Home Page: <a href="https://sightvanish.github.io">https://sightvanish.github.io</a>.<br>
-            LinkedIn: <a href="https://www.linkedin.com/in/wuchen-aubrey-li-a215612aa/">https://www.linkedin.com/in/wuchen-aubrey-li-a215612aa/</a>.
-        </p>
+        <div class="homepage-links">
+            <p><strong>Home Page:</strong> <a href="https://sightvanish.github.io">https://sightvanish.github.io</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wuchen-aubrey-li-a215612aa/">https://www.linkedin.com/in/wuchen-aubrey-li-a215612aa/</a></p>
+        </div>
     </div>
 </body>
 </html>
