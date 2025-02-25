@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%; /* Makes the image round */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%; /* Ensure it adapts to viewport */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.homepage-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.homepage-links a {
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Screens (Mobile) */
+@media (max-width: 767px) {
+    p {
+        width: 90%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    img {
+        max-width: 120px;
+    }
+}
+
+/* Tablets and Larger Mobile Screens (Portrait mode) */
+@media (max-width: 1024px) {
+    p {
+        width: 85%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
