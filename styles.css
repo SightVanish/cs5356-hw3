@@ -28,12 +28,24 @@ p {
 
 .container {
     max-width: 800px;
-    width: 100%; /* Ensure it adapts to viewport */
+    width: 100%;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* same as container */
+footer {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    /* background-color: #fff; */
+    padding: 10px;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
 }
 
 h2 {
