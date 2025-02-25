@@ -8,12 +8,15 @@ body {
 
 img {
     border-radius: 50%;
-    width: 150px; 
-    height: 150px; 
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     margin-bottom: 20px;
-    filter: contrast(80%) brightness(90%) saturate(120%);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transform-style: preserve-3d;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
+
 
 p {
     color: #555;
@@ -79,4 +82,12 @@ button:hover {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+}
+
+details {
+    margin-top: 20px;
+}
+details summary {
+    cursor: pointer;
+    font-weight: bold;
 }
