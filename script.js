@@ -1,3 +1,4 @@
+// Fetch and display user's IP address and location
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("getIpBtn").addEventListener("click", function () {
         const apiKey = "6241d5d1ee678ab4991c32af395739ea";
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Rotate profile image on mouse move
 document.addEventListener("DOMContentLoaded", function () {
     const profileImage = document.querySelector("img");
 
@@ -47,3 +49,22 @@ document.addEventListener("DOMContentLoaded", function () {
         profileImage.style.transform = "rotateY(0deg) rotateX(0deg)";
     });
 });
+
+// Google Analytics Tracking Script
+(function() {
+    let GA_MEASUREMENT_ID = "G-00EEGS1P0P";
+
+    // Load Google Analytics script dynamically
+    let script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+
+    // Initialize Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+
+    gtag("js", new Date());
+    gtag("config", GA_MEASUREMENT_ID);
+})();
